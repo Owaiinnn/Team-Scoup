@@ -1,0 +1,95 @@
+body.theme-dark {
+    background-color: #270073 !important;
+    color: white;
+}
+
+body.theme-light {
+    background-color: white !important;
+    color: black;
+}
+
+.images-container {
+    position: relative;
+}
+
+#move-left {
+    position: absolute;
+    bottom: -80px;
+    left: -40px;
+}
+
+.smaller {
+    width: 200px;
+}
+
+.color {
+    background-color:lightsteelblue;
+}
+
+#notificationBox .toast {
+    width: 600px;
+    height: 80px;
+}
+
+#page2,
+#page3,
+#page4,
+#page5,
+#page6,
+#page7,
+#Nopage {
+    display: none;
+}
+
+.gif-background {
+    background-image: url("spaceachtergrond.gif");
+    background-size: cover;
+    color: white;
+    color: #fff;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+.try {
+    background-color: #270073;
+    padding: 70px;
+}
+
+#emailInput {
+    max-width: 650px;
+  }
+
+  .center-input {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainbody {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .cards {
+    justify-content: space-around;
+  }
+.cards1, .cards2, .cards3{
+  height: 450px;
+}
+
+  .card {
+    transition-property: width, height;
+    transition-duration: 1s;
+  }
+  
+  .card:hover {
+    width: 330px;
+    height: 450px;
+  }
+
+  .fade-in-text {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }  
