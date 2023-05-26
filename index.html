@@ -12,78 +12,59 @@
 </head>
 
 <body>
-    <!-- Image and text -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="spacex_logo_icon_144865.png" alt="logo" class="w-20"> SpaceX</a>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            </div>
-
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" href="#">Job Overview</a>
                     <a class="nav-link" href="vragen.html">Requirements test</a>
-                    <a class="nav-link" href="#">Necessary Certifications</a>
+                    <a class="nav-link" href="../Questions/bootstrap.html">Necessary Certifications</a>
                     <a class="nav-link" href="#">Application Process</a>
                 </div>
             </div>
         </div>
         <div id="Switch">
-            <div class="form-check form-switch">
+            <div class="form-check form-switch m-2">
                 <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox" role="switch">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Theme</label>
+                <label class="form-check-label text-dark" for="flexSwitchCheckDefault">Theme</label>
             </div>
         </div>
     </nav>
+    
     <!-- content -->
-    <div class="container w-75">
+    <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+        <strong>Alert!</strong> Job Opportunities Available! Take the <a class="linkvragen" href="vragen.html">Requirements Test</a> to determine your potential to
+        enhance our team.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>    
+    <div class="container">
         <div class="row py-5">
-            <h1 class="text-center fade-in-text">Become a SpaceX Rocket Flight Pilot</h1>
+            <h1 class="text-center">Become a SpaceX Rocket Flight Pilot</h1>
         </div>
         <div class="row m-5 p-5 shadow-lg p-3 mb-5 rounded color">
-            <div class="col-6 images-container">
+            <div class="col-lg-6">
                 <div class="image-overlay shadow mb-5 rounded">
-                    <img class="img-thumbnail fade-in-text" src="c4d262a0-8db2-11ec-b7f3-9320b02924fb.cf.jpg" alt="team">
+                    <img class="img-thumbnail" src="c4d262a0-8db2-11ec-b7f3-9320b02924fb.cf.jpg" alt="team">
                 </div>
                 <div class="image-overlay shadow mb-5 rounded" id="move-left">
-                    <img class="img-thumbnail smaller fade-in-text" src="spaceteam2.jpg" alt="team2">
+                    <img class="img-thumbnail smaller" src="spaceteam2.jpg" alt="team2">
                 </div>
             </div>
-            <div class="col-5 text intro fade-in-text">
+            <div class="col-lg-5 offset-lg-1">
                 <h1>Introduction</h1>
-                <p>As SpaceX continues to expand its ambitious intercontinental rocket flight program, we are
-                    looking for highly skilled and dedicated pilots to join our team. This document provides an
-                    overview of the SpaceX Pilot Recruitment Program, outlining the job requirements, necessary
-                    certifications, and the application process. The information provided here will serve as a
-                    foundation for students to create a user-friendly web flow for prospective pilots to learn
-                    about the opportunity and sign up to become a SpaceX pilot.</p>
-            </div>
-            <!-- Notification Box -->
-            <div id="notificationBox" class="position-fixed bottom-0 end-0 p-3" style="display: none;">
-                <div class="toast align-items-center text-white bg-primary" role="alert" aria-live="assertive"
-                    aria-atomic="true">
-                    <div class="d-flex">
-                        <div class="toast-body">
-                            Job Opportunities Available! Take the assessment to determine your potential to
-                            enhance our team.
-                        </div>
-                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
-                            aria-label="Close"></button>
-                    </div>
-                </div>
+                <p>As SpaceX continues to expand its ambitious intercontinental rocket flight program, we are looking for highly skilled and dedicated pilots to join our team. This document provides an overview of the SpaceX Pilot Recruitment Program, outlining the job requirements, necessary certifications, and the application process. The information provided here will serve as a foundation for students to create a user-friendly web flow for prospective pilots to learn about the opportunity and sign up to become a SpaceX pilot.</p>
             </div>
         </div>
     </div>
-    </div>
-    </div>
-
+    
+    <div class="space"></div>
     <h1 class="text-center">Learn about our crew:</h1>
-    <br>
+    <div class="small_space"></div>
     <div class="container">
         <div class="row cards">
             <div class="col-md-3">
@@ -100,10 +81,12 @@
             </div>
             <div class="col-md-3">
                 <div class="card cards2 shadow">
-                    <img id="cardimg" src="schermafbeelding-2020-04-17-om-120030_tp4q.png" class="card-img-top" alt="Pilot 2">
+                    <img id="cardimg" src="schermafbeelding-2020-04-17-om-120030_tp4q.png" class="card-img-top"
+                        alt="Pilot 2">
                     <div class="card-body">
                         <h5 class="card-title">Oleg Skripotsjka, Jessica Meir en Andrew Morgan</h5>
-                        <p class="card-text" style="margin-bottom: 35px;">Diverse pilots at SpaceX pushed aerospace limits, forging new paths for
+                        <p class="card-text" style="margin-bottom: 35px;">Diverse pilots at SpaceX pushed aerospace
+                            limits, forging new paths for
                             humanity through unforgettable missions.</p>
                         <a href="#" class="btn btn-dark btn-block">Read More</a>
                     </div>
@@ -114,7 +97,8 @@
                     <img id="cardimg" src="download.jpg" class="card-img-top" alt="Pilot 3">
                     <div class="card-body">
                         <h5 class="card-title">André Kuipers</h5>
-                        <p class="card-text" style="margin-bottom: 80px;">"At SpaceX, I witnessed technology's transformative power in redefining
+                        <p class="card-text" style="margin-bottom: 80px;">"At SpaceX, I witnessed technology's
+                            transformative power in redefining
                             all-around world travel, pushing human possibilities to new limits.</p>
                         <a href="#" class="btn btn-dark">Read More</a>
                     </div>
@@ -123,7 +107,7 @@
         </div>
     </div>
     </div>
-    <br>
+    <div class="small_space"></div>
     <h1 class="text-center">Conclusion</h1>
     <div class="container">
         <br>
@@ -137,13 +121,13 @@
             </div>
         </div>
     </div>
+    <div class="small_space"></div>
     <section class="">
         <footer class="bg-secondary text-white text-center bg-dark text-md-start">
             <div class="container p-4">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                         <h5>SpaceX</h5>
-
                         <p>
                             Pioneering space company founded by Elon Musk in 2002, revolutionizing space tech and
                             global
@@ -172,7 +156,7 @@
 
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#!" class="text-white">Company</a>
+                                <a href="Company.html" class="text-white">Company</a>
                             </li>
                             <li>
                                 <a href="#!" class="text-white">Team</a>
